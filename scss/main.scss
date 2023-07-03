@@ -1,0 +1,59 @@
+// Variables
+@import "variables";
+
+// Reset
+@import "reset";
+
+// Components
+
+@import "components/button";
+@import "components/header";
+@import "components/footer";
+@import "components/membership";
+@import "components/feature";
+@import "components/products";
+@import "components/recommendations";
+@import "components/main";
+
+
+*, html {
+
+    scroll-behavior: smooth !important;
+    scroll-padding-top: 80px;
+}
+
+body {
+    font-family: $open-sans;
+}
+
+
+.margin-y {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+
+    @media (width < 580px) {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+}
+
+.title {
+    flex: 1;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+    font-family: $open-sans;
+    text-transform: capitalize;
+    color: $black;
+}
+
+.subtitle {
+    flex: 1;
+    text-align: center;
+    width: 100%;
+    font-size: 1.2rem;
+    font-weight: 600;
+    font-family: $open-sans;
+    text-transform: capitalize;
+    color: $gris-medio;
+}

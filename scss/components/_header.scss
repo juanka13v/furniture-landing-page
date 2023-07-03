@@ -1,0 +1,140 @@
+.header {
+  background: $white;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  max-width: 1140px;
+  margin: 0 auto;
+  height: 80px;
+  gap: 5rem;
+  z-index: 9999;
+
+  @media (width < 768px) {
+    
+
+    gap: initial;
+    height: 60px;
+    justify-content: space-between;
+  }
+
+  .logo {
+    padding-left: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+
+    .img-logo {
+      width: 42px;
+      height: 42px;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    .title {
+      h3 {
+        font-size: 1.8rem;
+        font-family: $raleway;
+        font-weight: 800;
+        color: $black;
+      }
+    }
+  }
+
+  .menu-btn {
+    display: none;
+    align-items: center;
+    justify-content: center;
+
+    i {
+      color: $black;
+      font-size: 2.2rem;
+      cursor: pointer;
+    }
+
+
+    @media (width < 768px) {
+      display: flex;
+      padding-right: 10px;
+    }
+  }
+
+  .navbar {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 1rem;
+
+    @media (width < 768px) {
+      padding-right: 0;
+      background: $white;
+      position: absolute;
+      top: 60px;
+      left: -100%;
+      right: 0;
+      width: 100%;
+      height: calc(100vh - 60px);
+      flex-direction: column;
+      justify-content: start;
+      gap: 2rem;
+      z-index: 999;
+
+      transition: all .4s ease;
+
+      &.active {
+        left: 0;
+      }
+    }
+
+    .links {
+      display: flex;
+      align-items: center;
+      gap: 34px;
+
+      @media (width < 768px) {
+        margin-top: 2rem;
+        gap: 20px;
+        flex-direction: column;
+      }
+
+      li {
+        
+
+        a {
+            position: relative;
+            color: $gris-claro;
+            font-size: .9rem;
+            font-weight: 800;
+            font-family: $raleway;
+
+            &.active {
+                color: $black
+            }
+
+            &:hover {
+                color: $black;
+            }
+            
+
+            &.active::after {
+                background-color: $black;
+                content: "";
+                position: absolute;
+                bottom: -4px; /* Adjust the position of the underline */
+                left: 50%;
+                transform: translateX(-50%);
+                width: 50%; /* Adjust the width of the underline */
+                height: 3px; /* Adjust the thickness of the underline */
+            }
+        }
+      }
+    }
+  }
+}

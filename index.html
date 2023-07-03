@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="scss/main.css" />
+    <title>House Page</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo">
+        <div class="img-logo">
+          <img src="/assets/logo.svg" alt="" />
+        </div>
+        <a href="#" class="title">
+          <h3>Fenisha</h3>
+        </a>
+      </div>
+
+      <div class="menu-btn">
+        <i class="bx bx-menu-alt-right" id="handle-menu"></i>
+      </div>
+
+      <nav class="navbar" id="navbar">
+        <ul class="links">
+          <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
+          <li class="nav-item"><a href="#categories" class="nav-link">Categories</a></li>
+          <li class="nav-item"><a href="#products" class="nav-link">Products</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+
+        <button class="btn">
+          <a href="#"> sing in </a>
+        </button>
+      </nav>
+    </header>
+
+    <main class="main margin-y encabezado" data-section="home" id="home">
+      <div class="content">
+
+        <h1 class="main-title">
+          The best choise four your <span class="img-title"><img src="/assets/main-title.png" alt=""></span> <span class="sub">convenience.</span>
+        </h1>
+
+        <p class="main-text">
+          Comfort is our priority to satisfy our customers, and we provide all the forniture that you can easily and quickly.  
+        </p>
+
+        <div class="buttons">
+          <button class="btn">
+            <a href="#">Get Started</a>
+          </button>
+
+          <button class="btn btn-white">
+            <a href="#">
+              <i class='bx bx-play-circle'></i>
+              Watch Video
+            </a>
+          </button>
+        </div>
+
+        <ul class="info">
+          <li>
+            <h3>200+</h3>
+            <p>Unique Style</p>
+          </li>
+
+          <li>
+            <h3>300+</h3>
+            <p>Project Finished</p>
+          </li>
+
+          <li>
+            <h3>600+</h3>
+            <p>Happy Customers</p>
+          </li>
+        </ul>
+      </div>
+
+      <div class="container-slider">
+        <div class="buttons">
+          <button class="btn" id="btn-left">
+            <a href="#">
+              <i class='bx bxs-left-arrow'></i>
+            </a>
+          </button>
+
+          <button class="btn" id="btn-right">
+            <a href="#">
+              <i class='bx bxs-right-arrow'></i>
+            </a>
+          </button>
+        </div>
+
+          <div class="slider" id="slider">
+            <div class="box-img">
+              <img src="/assets/slider/slider-1.png" alt="">
+            </div>
+    
+            <div class="box-img">
+              <img src="/assets//slider//slider-2.png" alt="">
+            </div>
+    
+            <div class="box-img">
+              <img src="/assets//slider//slider-3.png" alt="">
+            </div>
+          </div>
+
+      </div>
+    </main>
+
+
+    <section class="feature margin-y">
+      <div class="title">
+        <h4>Feature</h4>
+        <h2>what do we give you?</h2>
+      </div>
+
+      <ul class="list">
+        <li>
+          <h4>- Free shipping</h4>
+          <p>
+            We really understand our customer, so we will free shipping costs to
+            any location quickly and safely.
+          </p>
+        </li>
+
+        <li>
+          <h4>- Best Price</h4>
+          <p>
+            We provide the best price for you compared to other places with the
+            same quality as other stores.
+          </p>
+        </li>
+
+        <li>
+          <h4>- 7 years garanty</h4>
+          <p>
+            We really believe in our products, so we provide a garanty time of 7
+            years for you our customers.
+          </p>
+        </li>
+      </ul>
+    </section>
+
+    <section class="recommendations margin-y" id="categories">
+      <div class="col-1">
+        <div class="box">
+          <img class="img-acordeon" src="/assets/living/living-1.png" alt="">
+        </div>
+
+        <div class="box">
+          <img class="img-acordeon" src="/assets/living/living-2.png" alt="">
+        </div>
+
+        <div class="box active">
+          <img class="img-acordeon" src="/assets/living/living-3.png" alt="">
+        </div>
+      </div>
+
+      <div class="col-2">
+        <h4 class="subtitle encabezado" data-section="categories">categories</h4>
+        <h2 class="title">Our best recomendations</h2>
+
+        <ul class="acordeon">
+          <li class="acordeon-item active" data-id="living">
+            <h4>Living Room</h4>
+            <p>Having a beautiful living room is everyone's dream, so we give our recommendation for it</p>
+          </li>
+        
+          <li class="acordeon-item" data-id="workspace">
+            <h4>Private Workspace</h4>
+            <p>Create your own productive and comfortable private workspace with our expert tips and recommendations</p>
+          </li>
+        
+          <li class="acordeon-item" data-id="gaming">
+            <h4>Gaming Room</h4>
+            <p>Design the ultimate gaming room where you can immerse yourself in thrilling virtual adventures</p>
+          </li>
+        
+          <li class="acordeon-item" data-id="patio">
+            <h4>Patio</h4>
+            <p>Transform your outdoor space into a tranquil and inviting patio where you can relax and unwind</p>
+          </li>
+        </ul>
+        
+      </div>
+    </section>
+
+    <section class="membership margin-y">
+      <img src="/assets/membership.png" alt="" />
+      <div class="content">
+        <h3>get discount for membership</h3>
+        <p>
+          Every new membership will get a 40% discount for the first purchase.
+        </p>
+
+        <button class="btn">
+          <a href="#"> Join now </a>
+        </button>
+      </div>
+    </section>
+
+    <section class="products margin-y" id="products">
+      <h4 class="subtitle encabezado" data-section="products">our product</h4>
+      <h2 class="title">Magnificent product from us</h2>
+
+      <ul class="categories">
+        <li class="popular active">Popular</li>
+        <li class="all">All Product</li>
+        <li class="table">Table</li>
+        <li class="lamp">Lamp</li>
+      </ul>
+
+      <div class="grid">
+        <img class="grid-item" src="/assets/table/table-1.png" alt="" />
+
+        <img class="grid-item" src="/assets/lamp/lamp-1.png" alt="" />
+
+        <img class="grid-item" src="/assets/lamp/lamp-2.png" alt="" />
+
+        <img class="grid-item" src="/assets/table/table-2.png" alt="" />
+
+        <img class="grid-item" src="/assets/chair/chair-1.png" alt="" />
+
+        <img class="grid-item" src="/assets/chair/chair-2.png" alt="" />
+      </div>
+
+      <button class="btn">
+        <a href="#">View All</a>
+      </button>
+    </section>
+
+    <footer class="footer" id="contact">
+      <div class="col-1">
+        <div class="info">
+          <div class="logo">
+            <div class="img-logo">
+              <img src="/assets/logo-white.svg" alt="" />
+            </div>
+            <a href="#" class="title-logo">
+              <h3 class="encabezado" data-section="contact">Fenisha</h3>
+            </a>
+          </div>
+
+          <p class="description">
+            Comfort is our priority to safetyour customers, and we provide all
+            the furniture that you can easily and quickly.
+          </p>
+        </div>
+
+        <p class="copyright">2023 © Fenisha Productions</p>
+      </div>
+
+      <div class="col-2">
+        <div class="newsletter">
+          <h3 class="title">sing up for our newsletter</h3>
+
+          <form class="form">
+            <input type="text" placeholder="Your email address" />
+            <button class="btn btn-white">
+              <a href="#">Submit</a>
+            </button>
+          </form>
+        </div>
+
+        <nav class="links">
+          <ul class="list">
+            <li>Menu</li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Product</a></li>
+            <li><a href="#">Store</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+
+          <ul class="list">
+            <li>Help</li>
+            <li><a href="#">Privacy and Policy</a></li>
+            <li><a href="#">Terms of Use</a></li>
+          </ul>
+
+          <ul class="list">
+            <li>Social</li>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">Instagram</a></li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+
+    <script src="main.js"></script>
+  </body>
+</html>

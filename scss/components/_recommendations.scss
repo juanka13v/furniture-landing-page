@@ -1,0 +1,98 @@
+.recommendations {
+    max-width: calc(1140px - 4rem);
+    margin: 0 auto;
+    padding: 2rem;
+
+    display: flex;
+    gap: 2rem;
+
+    @media (width < 768px) {
+        padding: 2rem 1rem;
+        flex-direction: column-reverse;
+    }
+
+    .col-1 {
+        flex: 6;
+        display: flex;
+        gap: 10px;
+
+        .box {
+            flex: 1;
+            cursor: pointer;
+            transition: all .3s ease-in-out;
+
+            &.active {
+                cursor: initial;
+                flex: 4;
+            }
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: center;
+            }
+        }
+    
+    }
+
+    .col-2 {
+        flex: 4;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+
+        .subtitle {
+            text-align: start;
+        }
+
+        .title {
+            text-align: start;
+            font-size: 2.2rem;
+        }
+
+        .acordeon {
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+            
+
+            .acordeon-item {
+                display: flex;
+                flex-direction: column;
+                gap: 8px;
+                cursor: pointer;
+                transition: all .3s ease-in-out;
+
+                &.active {
+                    background-color: $black;
+                    padding: 1rem;
+                    cursor: initial;
+
+                    h4 {
+                        color: $white;
+                    }
+
+                    p {
+                        opacity: 1;
+                        height: initial;
+                    }
+                }
+
+                h4 {
+                    font-weight: 700;
+                    font-size: 1.2rem;
+                    color: $black;
+                }
+
+                p {
+                    font-size: .85rem;
+                    line-height: 1.3;
+                    color: $gray;
+                    opacity: 0;
+                    height: 0;
+                }
+            }
+        }
+    }
+}
