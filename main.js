@@ -47,39 +47,39 @@ const btnTable = document.querySelector(".table");
 const btnLamp = document.querySelector(".lamp");
 
 const TableImgs = [
-  "/assets/table/table-1.png",
-  "/assets/table/table-2.png",
-  "/assets/table/table-3.png",
-  "/assets/table/table-4.png",
-  "/assets/table/table-5.png",
-  "/assets/table/table-6.png",
+  "/assets/table/table-1.webp",
+  "/assets/table/table-2.webp",
+  "/assets/table/table-3.webp",
+  "/assets/table/table-4.webp",
+  "/assets/table/table-5.webp",
+  "/assets/table/table-6.webp",
 ];
 
 const LampImgs = [
-  "/assets/lamp/lamp-1.png",
-  "/assets/lamp/lamp-2.png",
-  "/assets/lamp/lamp-3.png",
-  "/assets/lamp/lamp-4.png",
-  "/assets/lamp/lamp-5.png",
-  "/assets/lamp/lamp-6.png",
+  "/assets/lamp/lamp-1.webp",
+  "/assets/lamp/lamp-2.webp",
+  "/assets/lamp/lamp-3.webp",
+  "/assets/lamp/lamp-4.webp",
+  "/assets/lamp/lamp-5.webp",
+  "/assets/lamp/lamp-6.webp",
 ];
 
 const ChairImgs = [
-  "/assets/chair/chair-1.png",
-  "/assets/chair/chair-2.png",
-  "/assets/chair/chair-3.png",
-  "/assets/chair/chair-4.png",
-  "/assets/chair/chair-5.png",
-  "/assets/chair/chair-6.png",
+  "/assets/chair/chair-1.webp",
+  "/assets/chair/chair-2.webp",
+  "/assets/chair/chair-3.webp",
+  "/assets/chair/chair-4.webp",
+  "/assets/chair/chair-5.webp",
+  "/assets/chair/chair-6.webp",
 ];
 
 const PopularImgs = [
-  "/assets/table/table-1.png",
-  "/assets/table/table-2.png",
-  "/assets/chair/chair-3.png",
-  "/assets/chair/chair-4.png",
-  "/assets/lamp/lamp-5.png",
-  "/assets/lamp/lamp-6.png",
+  "/assets/table/table-1.webp",
+  "/assets/table/table-2.webp",
+  "/assets/chair/chair-3.webp",
+  "/assets/chair/chair-4.webp",
+  "/assets/lamp/lamp-5.webp",
+  "/assets/lamp/lamp-6.webp",
 ];
 
 btnPopular.addEventListener("click", function (e) {
@@ -132,27 +132,27 @@ const acordeonItems = document.querySelectorAll(".acordeon-item");
 const acordeonImgs = document.querySelectorAll(".img-acordeon");
 
 const PatioImgs = [
-  "/assets/patio/patio-1.png",
-  "/assets/patio/patio-2.png",
-  "/assets/patio/patio-3.png",
+  "/assets/patio/patio-1.webp",
+  "/assets/patio/patio-2.webp",
+  "/assets/patio/patio-3.webp",
 ];
 
 const LivingImgs = [
-  "/assets/living/living-1.png",
-  "/assets/living/living-2.png",
-  "/assets/living/living-3.png",
+  "/assets/living/living-1.webp",
+  "/assets/living/living-2.webp",
+  "/assets/living/living-3.webp",
 ];
 
 const WorkspaceImgs = [
-  "/assets/workspace/workspace-1.png",
-  "/assets/workspace/workspace-2.png",
-  "/assets/workspace/workspace-3.png",
+  "/assets/workspace/workspace-1.webp",
+  "/assets/workspace/workspace-2.webp",
+  "/assets/workspace/workspace-3.webp",
 ];
 
 const GamingImgs = [
-  "/assets/gaming/gaming-1.png",
-  "/assets/gaming/gaming-2.png",
-  "/assets/gaming/gaming-3.png",
+  "/assets/gaming/gaming-1.webp",
+  "/assets/gaming/gaming-2.webp",
+  "/assets/gaming/gaming-3.webp",
 ];
 
 function changeImgs(id) {
