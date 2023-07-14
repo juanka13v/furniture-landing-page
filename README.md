@@ -5,7 +5,7 @@ This landing page serves as a preview for a fictional furniture store that speci
 
 ## Preview
 
-You can see a preview of the page at [https://furniture-store.netlify.app/](https://furniture-store.netlify.app/). Please note that this is just a demonstration.
+You can see a preview of the page at [https://furniture-store-design.netlify.app/](https://furniture-store-design.netlify.app/). Please note that this is just a demonstration.
 
 
 ## Additional Features
